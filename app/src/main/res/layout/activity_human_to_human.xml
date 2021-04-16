@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HumanToHuman">
+
+    <TextView
+        android:text="Human  vs  Human"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:id="@+id/humanToHuman"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:text=""
+        android:layout_below="@id/humanToHuman"
+        android:id="@+id/humanResultId"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/humanBoardId"
+        android:layout_margin="50dp"
+        android:layout_below="@id/humanResultId"
+        android:layout_above="@id/scoreBoardId"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="#FBFBFB"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:id="@+id/button_00"
+                android:layout_weight="1"
+                android:textSize="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="match_parent">
+
+            </Button>
+            <Button
+                android:layout_width="0dp"
+                android:id="@+id/button_01"
+                android:textSize="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+            </Button>
+            <Button
+                android:layout_width="0dp"
+                android:id="@+id/button_02"
+                android:textSize="40dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="#FBFBFB"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/button_10"
+                android:textSize="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="match_parent">
+
+            </Button>
+            <Button
+                android:layout_width="0dp"
+                android:layout_marginRight="10dp"
+                android:textSize="40dp"
+                android:id="@+id/button_11"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+            </Button>
+            <Button
+                android:layout_width="0dp"
+                android:id="@+id/button_12"
+                android:textSize="40dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+            </Button>
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="#FBFBFB"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="40dp"
+                android:id="@+id/button_20"
+                android:layout_marginRight="10dp"
+                android:layout_height="match_parent">
+
+            </Button>
+            <Button
+                android:layout_width="0dp"
+                android:layout_marginRight="10dp"
+                android:textSize="40dp"
+                android:id="@+id/button_21"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+            </Button>
+            <Button
+                android:layout_width="0dp"
+                android:id="@+id/button_22"
+                android:textSize="40dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+            </Button>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_above="@id/humanRestartButtonId"
+       android:gravity="center_horizontal"
+       android:orientation="vertical"
+        android:id="@+id/scoreBoardId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="25sp"
+            android:text="Player 1 :"
+            android:id="@+id/player1Result"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:textSize="25sp"
+            android:id="@+id/player2Result"
+            android:textColor="@android:color/black"
+            android:text="Player 2 :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <Button
+        android:text="ReStart"
+        android:id="@+id/humanRestartButtonId"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+
+
+
+
+</RelativeLayout>
